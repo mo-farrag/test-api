@@ -1,0 +1,76 @@
+{
+	"variables": [],
+	"info": {
+		"name": "test",
+		"_postman_id": "e5000760-c7d2-d7c2-5e25-ec944d565a5f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/users/register",
+			"request": {
+				"url": "http://localhost:5000/api/users/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Ahmed\",\r\n  \"lastName\": \"Ali\",\r\n  \"phone\": \"13224177332\",\r\n  \"email\": \"test@test.com\",\r\n  \"password\":\"123458\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/users/login",
+			"request": {
+				"url": "http://localhost:5000/api/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"email\": \"test@test.com\",\r\n  \"password\": \"123458\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/users/check",
+			"request": {
+				"url": "http://localhost:5000/api/users/check",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjYsImVtYWlsIjoidGVzdDNAdGVzdC5jbzNtIiwiZXhwaXJlQXQiOiIyMDIwLTA0LTI0VDAwOjI0OjI4LjExNloiLCJpYXQiOjE1ODc2ODQyNjh9.2SCNbNtGKu7-2nPskjSInC-wlijCEMhprTBABfDtKsY",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test@test.com\"\r\n  \r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "users-api-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
+    "coverage": "jest --coverage"
+  },
+  "author": "Mohamed Farrag",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "sequelize": "^5.21.1",
+    "sequelize-cli": "^4.0.0",
+    "sqlite3": "^4.0.2",
+    "validate-phone-number-node-js": "0.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "supertest": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6.12"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/coverage/**"
+    ],
+    "testURL": "http://localhost/"
+  }
+}
